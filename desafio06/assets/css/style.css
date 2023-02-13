@@ -1,0 +1,229 @@
+.generalStyle1 h3 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.64);
+}
+.generalStyle1 p {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 500;
+}
+.classTime {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#boadingPass {
+  width: 32.7rem;
+  height: 65.6rem;
+}
+
+#boadingPass h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+#boadingPass #boardingPassParagraph {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.64;
+}
+#ticket {
+  width: 32.7rem;
+  font-weight: 400;
+  height: 54.4rem;
+  margin-block: 2rem;
+}
+
+#flightInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem 3.2rem;
+  border-radius: 2.4rem 2.4rem 0 0;
+  background: #ffffff;
+  position: relative;
+}
+
+/* Trabalhando com o before and after */
+/* ================================== */
+#flightInfo::before,
+#flightInfo::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: #633bbc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+#flightInfo:after {
+  left: -1.2rem;
+  transform: translateY(17.5rem);
+}
+
+#flightInfo:before {
+  right: -1.2rem;
+  transform: translateY(17.5rem);
+}
+/* Terminei a primeira parte aqui */
+/* ============================== */
+
+#firstContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+#flightData h3 {
+  text-align: right;
+}
+#flightData p {
+  text-align: right;
+}
+#secondContainer {
+  display: grid;
+  grid-template-columns: 1fr 1rem 1fr;
+  align-items: center;
+}
+#departure p,
+#arrival p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+#departure h3,
+#arrival h3 {
+  font-size: 4rem;
+  line-height: 4.7rem;
+  color: rgba(0, 0, 0, 0.88);
+}
+#arrival {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#time p sup {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#passangerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.4rem 3.2rem;
+  border-radius: 0;
+  background: #ffffff;
+  border-top: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
+  position: relative;
+}
+
+/* Trabalhando com o before and after */
+/* ================================== */
+#passangerInfo::before,
+#passangerInfo::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  background: #633bbc;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+#passangerInfo:after {
+  left: -1.2rem;
+  transform: translateY(7rem);
+}
+#passangerInfo:before {
+  right: -1.2rem;
+  transform: translateY(7rem);
+}
+/* Terminei aqui a segunda parte */
+/* ================================== */
+
+#seat h3 {
+  text-align: right;
+}
+#seat p {
+  text-align: right;
+}
+#boardingInfo {
+  background: #ffffff;
+  border-radius: 0 0 2.4rem 2.4rem;
+}
+.boardingInfoParagraph {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+  padding-block: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+#boardingInfo #container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 2.4rem 3.2rem;
+  width: 250px;
+  height: 150px;
+}
+#container #boardingInfoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+#boardingInfoContent #boardingTime p {
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+  background: #633bbc;
+}
+#qrcode p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.64);
+}
+@media (max-width:720px) {
+  #flightInfo {
+    border-radius: 2.4rem;
+  }
+  #flightInfo::before,
+  #flightInfo::after {
+    display: none;
+  }
+  #flightInfo:after,
+  #flightInfo:before {
+    display: none;
+  }
+  #passangerInfo {
+    border-radius: 2.4rem;
+  }
+  #passangerInfo::before,
+  #passangerInfo::after {
+    display: none;
+  }
+  #boardingInfo{
+    border-radius:2.4rem;
+  }
+}
