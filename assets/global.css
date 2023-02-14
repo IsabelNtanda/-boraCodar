@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-light: #ecf2ff;
+  --theme-dark: #03001c;
+
+  --bg-primary: #fff;
+  --bg-secondary: rgb(0, 0, 0);
+  --bg-default: green;
+}
+
+body {
+  background: var(--theme-light);
+}
+
+body.activeThemeDark {
+  background: var(--theme-dark);
+
+  color: var(--bg-primary);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body,
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.loading {
+  background: rgba(0, 0, 0, 0.829);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+
+  font-weight: 400;
+}
