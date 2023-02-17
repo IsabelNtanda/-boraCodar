@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+body * {
+  font-family: "Roboto", sans-serif;
+}
+#hero {
+  width: 100%;
+  height: 80vh;
+  background-color: #f8f8ff;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+#hero .content {
+  width: 99.3rem;
+  height: 33.2rem;
+}
+.ilustra-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ilustra-02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.content-top {
+  width: 64.7rem;
+  height: 16.7rem;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+.content-top p {
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  color: #e45858;
+  text-transform: uppercase;
+}
+.content-top h1 {
+  font-size: 48px;
+  line-height: 125%;
+  color: #121214;
+  font-weight: bold;
+}
+.content-top h1 span {
+  color: #6246ea;
+}
+.content-busca {
+  width: 100%;
+  height: 12.8rem;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+#formulario {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+input:not(.submit) {
+  width: 34.8rem;
+  height: 4.8rem;
+  border: none;
+  background-color: #f4f4ff;
+  border-radius: 0.5rem;
+  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+  outline: none;
+}
+input::placeholder{
+line-height: 100%;
+font-weight: 400;
+color: #7C7C8A;
+}
+.submit{
+width: 16.9rem;
+height: 4.8rem;
+background-color: #6246EA;
+border-radius: .5rem;
+padding: 1.2rem 3.2rem;
+border: none;
+color:#ffffff;
+text-transform: uppercase;
+font-size: 1.4rem;
+font-weight: bold;
+line-height: 2.4rem;
+}
+#main{
+width: 94%;
+margin: 4rem auto;
+}
+#main .title{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.title h2{
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 140%;
+  text-align: center;
+  color: #121214;
+}
+.button-select{
+  padding:.8rem;
+  border: 1px solid #EAEAEA;
+  border-radius:.6rem;
+}
+button{
+text-transform: uppercase;
+padding: .4rem 2.4rem;
+border: none;
+font-size: 1.4rem;
+font-weight: bold;
+line-height: 2.4rem;
+border-radius:.5rem;
+}
+button:first-child{
+  background: #6246EA;
+  color: white;
+}
+button:last-child{
+  color: #6246EA;
+  background-color: transparent;
+}
+.line{
+margin-top:4rem;
+display: flex;
+gap: 1.6rem;
+
+}
+.line .card{
+  padding: 1.6rem;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 1rem;
+}
