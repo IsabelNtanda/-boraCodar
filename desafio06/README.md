@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Cartão Embarque é um desafio da comunidade rocketseat sugerida pelo professor Mayk Brito dentro da #BoraCodar
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://bora-codar-xi.vercel.app/desafio06/index.html)
 
 ## 🔖 Layout
 
