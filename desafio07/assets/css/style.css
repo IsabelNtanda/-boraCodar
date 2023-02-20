@@ -12,13 +12,11 @@
   margin: 0 auto;
   height: 33.2rem;
 }
-
 .ilustra-01 {
   position: absolute;
   top: 0;
   left: 0;
 }
-
 .ilustra-02 {
   position: absolute;
   bottom: 0;
@@ -32,7 +30,6 @@
   margin: 0 auto 4rem auto;
   text-align: center;
 }
-
 .content-top p {
   font-weight: 500;
   line-height: 160%;
@@ -40,18 +37,15 @@
   color: #e45858;
   text-transform: uppercase;
 }
-
 .content-top h1 {
   font-size: 48px;
   line-height: 125%;
   color: #121214;
   font-weight: bold;
 }
-
 .content-top h1 span {
   color: #6246ea;
 }
-
 .content-busca {
   width: 100%;
   margin: 0 auto;
@@ -71,25 +65,20 @@
 }
 
 #formulario .searchField {
-  background: blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f4f4ff;
-
   border-radius: 0.5rem;
 }
-
 #formulario .searchField img {
-  padding-left: 12px;
+  padding-left: 1.2rem;
 }
-
 #formulario input:not(.submit) {
   background-color: #f4f4ff;
   width: 90%;
   height: 4.8rem;
   border: none;
-
   /* border-radius: 0.5rem; */
 
   border-top-right-radius: 0.5rem;
@@ -116,35 +105,36 @@
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 2.4rem;
+  transition: all .4;
 }
-
+#formulario .submit:hover{
+  filter: brightness(1.5);
+    cursor: pointer;
+}
 /* MAIN */
 #main {
   width: 85%;
   margin: 4rem auto;
 }
-
-#main .title {
+#main .main-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-#main .title h2 {
+}
+#main .main-title h2 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 140%;
   text-align: center;
   color: #121214;
 }
-
-.button-select {
+.main-title .button-select {
   padding: 0.8rem;
   border: 1px solid #eaeaea;
   border-radius: 0.6rem;
 }
-
-button {
+.button-select button {
   text-transform: uppercase;
   padding: 0.4rem 2.4rem;
   border: none;
@@ -152,39 +142,75 @@ button {
   font-weight: bold;
   line-height: 2.4rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all .3s;
 }
 
-button:first-child {
+.button-select button:first-child {
   background: #6246ea;
   color: white;
 }
-
-button:last-child {
+.button-select button:first-child:hover{
+  filter: brightness(1.5);
+}
+.button-select button:last-child {
   color: #6246ea;
   background-color: transparent;
+  transition: all .4s;
 }
-
-.line {
+.button-select button:last-child:hover{
+  color: #6246ea;
+  background-color: transparent;
+  filter: brightness(1.5);
+}
+#grid-cards{
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+}
+#grid-cards .line {
   margin-top: 4rem;
   display: flex;
   gap: 1.6rem;
 }
-
 .line .card {
   border: 1px solid #eaeaea;
   width: 40%;
   border-radius: 1rem;
 }
-
-.line .card .content {
-  padding: 1.6rem;
-}
-
 .line .card > img {
   width: 100%;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+.line .card .content-card {
+  padding: 1.6rem;
+
+}
+ .card .content-card h3{
+font-weight: bold;
+line-height: 140%;
+font-size: 2rem;
+color: #121214;
+}
+.card .content-card > p{
+font-weight: 400;
+color: rgba(0,0,0,.75);
+line-height: 160%;
+line-break:auto;
+margin-block: 1.6rem;
+}
+.content-card .city{
+display: flex;
+align-items: center;
+gap: .8rem;
+}
+.content-card .city p{
+line-height: 160%;
+color: rgba(0,0,0,.75);
+text-transform: capitalize;
+font-weight: 400;
+}
+
 
 @media (max-width: 780px) {
 }
