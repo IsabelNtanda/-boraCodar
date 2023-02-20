@@ -12,6 +12,7 @@
   margin: 0 auto;
   height: 33.2rem;
 }
+
 .ilustra-01 {
   position: absolute;
   top: 0;
@@ -29,7 +30,6 @@
   height: 16.7rem;
   margin: 0 auto 4rem auto;
   text-align: center;
-  
 }
 .content-top p {
   font-weight: 500;
@@ -47,6 +47,7 @@
 .content-top h1 span {
   color: #6246ea;
 }
+
 .content-busca {
   width: 100%;
   margin: 0 auto;
@@ -69,7 +70,6 @@
   align-items: center;
   background-color: #f4f4ff;
   border-radius: 0.5rem;
-
 }
 #formulario .searchField img {
   padding-left: 1.2rem;
@@ -105,11 +105,11 @@
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 2.4rem;
-  transition: all .4;
+  transition: all 0.4;
 }
-#formulario .submit:hover{
+#formulario .submit:hover {
   filter: brightness(1.5);
-    cursor: pointer;
+  cursor: pointer;
 }
 /* MAIN */
 #main {
@@ -120,7 +120,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 #main .main-title h2 {
   font-weight: 700;
@@ -143,22 +142,22 @@
   line-height: 2.4rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .button-select button:first-child {
   background: #6246ea;
   color: white;
 }
-.button-select button:first-child:hover{
+.button-select button:first-child:hover {
   filter: brightness(1.5);
 }
 .button-select button:last-child {
   color: #6246ea;
   background-color: transparent;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.button-select button:last-child:hover{
+.button-select button:last-child:hover {
   color: #6246ea;
   background-color: transparent;
   filter: brightness(1.5);
@@ -182,62 +181,91 @@
 }
 .line .card .content-card {
   padding: 1.6rem;
-
 }
- .card .content-card h3{
-font-weight: bold;
-line-height: 140%;
-font-size: 2rem;
-color: #121214;
+.card .content-card h3 {
+  font-weight: bold;
+  line-height: 140%;
+  font-size: 2rem;
+  color: #121214;
 }
-.card .content-card > p{
-font-weight: 400;
-color: rgba(0,0,0,.75);
-line-height: 160%;
-line-break:auto;
-margin-block: 1.6rem;
+.card .content-card > p {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 160%;
+  line-break: auto;
+  margin-block: 1.6rem;
 }
-.content-card .city{
-display: flex;
-align-items: center;
-gap: .8rem;
+.content-card .city {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
-.content-card .city p{
-line-height: 160%;
-color: rgba(0,0,0,.75);
-text-transform: capitalize;
-font-weight: 400;
+.content-card .city p {
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+  text-transform: capitalize;
+  font-weight: 400;
 }
 
 @media (max-width: 780px) {
   .content-top h1 {
     font-size: 2.4rem;
   }
-  .ilustra-02 {
-   display: none;
+
+  /* Mexi nisso */
+  .ilustra-01 img {
+    width: 160px;
+    height: 150px;
   }
+  /* Mexi nisso */
+
+  .ilustra-02 {
+    display: none;
+  }
+
   #main .main-title {
     display: flex;
     flex-direction: column;
   }
+
   #grid-cards .line {
     width: 100%;
-  
+
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
   }
+
   .line .card {
     width: 100%;
   }
+
   .line .card > img {
     max-width: 100%;
   }
   #hero .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Mexi nisso */
+    width: 80%;
+    height: auto;
+    /* Mexi nisso */
   }
-  
+
+  /* Mexi nisso */
+  .content-top {
+    width: 100%;
+  }
+
+  .content-busca {
+    height: auto;
+  }
+
+  #formulario {
+    grid-template-columns: 1fr;
+  }
+  /* Mexi nisso */
 }
