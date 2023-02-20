@@ -69,7 +69,6 @@
   align-items: center;
   background-color: #f4f4ff;
   border-radius: 0.5rem;
-
 }
 #formulario .searchField img {
   padding-left: 1.2rem;
@@ -233,11 +232,5 @@ font-weight: 400;
   .line .card > img {
     max-width: 100%;
   }
-  #hero .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  
+ 
 }
