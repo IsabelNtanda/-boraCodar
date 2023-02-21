@@ -262,6 +262,7 @@
 
   .content-busca {
     height: auto;
+    background: red;
   }
 
   #formulario {
