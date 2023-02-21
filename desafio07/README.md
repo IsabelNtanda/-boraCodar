@@ -30,11 +30,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Bloco de Carnaval é um desafio da comunidade rocketseat sugerida pelo professor Mayk Brito dentro da #BoraCodar
 
-- [Acesse o projeto finalizado, online](https://bora-codar-xi.vercel.app/desafio06/index.html)
+- [Acesse o projeto finalizado, online](https://bora-codar-xi.vercel.app/desafio07/index.html)
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1205146101173113980). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1207675804423978995). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
