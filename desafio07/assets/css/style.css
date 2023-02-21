@@ -52,7 +52,6 @@
   margin: 0 auto;
   height: 12.8rem;
   background: #ffffff;
-  border: 1px solid red;
   border-radius: 1rem;
   padding: 4rem;
 }
@@ -206,6 +205,12 @@
   font-weight: 400;
 }
 
+@media (max-width: 1200px) 
+ {
+  .ilustra-02 {
+    display: none;
+  }
+}
 @media (max-width: 780px) {
   .content-top h1 {
     font-size: 2.5rem;
@@ -214,10 +219,7 @@
   }
   .content-busca {
     height: auto;
-    max-width: 100%;
-    border: 2px solid yellow;
-  }
-  #formulario .searchField {
+    width: 100%;
   }
   #formulario {
     grid-template-columns: 1fr;
@@ -228,11 +230,6 @@
     height: 15rem;
   }
   /* Mexi nisso */
-
-  .ilustra-02 {
-    display: none;
-  }
-
   #main .main-title {
     display: flex;
     flex-direction: column;
@@ -268,7 +265,7 @@
 
   .content-busca {
     height: auto;
-    background: red;
+    background-color: white;
   }
 
   #formulario {
