@@ -211,7 +211,12 @@
   .content-top h1 {
     font-size: 2.4rem;
   }
-
+.content-busca{
+height: auto;
+}
+#formulario {
+grid-template-columns: 1fr;
+}
   /* Mexi nisso */
   .ilustra-01 img {
     width: 160px;
