@@ -47,7 +47,6 @@
 .content-top h1 span {
   color: #6246ea;
 }
-
 .content-busca {
   width: 100%;
   margin: 0 auto;
@@ -59,11 +58,11 @@
 }
 /* FORM */
 #formulario {
+  width: 100%;
   display: grid;
   gap: 1.2rem;
   grid-template-columns: 1fr 1fr 169px;
 }
-
 #formulario .searchField {
   display: flex;
   justify-content: space-between;
@@ -209,13 +208,24 @@
 
 @media (max-width: 780px) {
   .content-top h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    width: 60%;
+    margin: auto;
   }
-
+  .content-busca {
+    height: auto;
+    max-width: 100%;
+    border: 2px solid yellow;
+  }
+  #formulario .searchField {
+  }
+  #formulario {
+    grid-template-columns: 1fr;
+  }
   /* Mexi nisso */
   .ilustra-01 img {
-    width: 160px;
-    height: 150px;
+    width: 16rem;
+    height: 15rem;
   }
   /* Mexi nisso */
 
@@ -227,19 +237,15 @@
     display: flex;
     flex-direction: column;
   }
-
   #grid-cards .line {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
   }
-
   .line .card {
     width: 100%;
   }
-
   .line .card > img {
     max-width: 100%;
   }
