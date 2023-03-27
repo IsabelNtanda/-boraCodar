@@ -1,0 +1,105 @@
+.grid {
+  display: grid;
+}
+
+#app {
+  grid-template-columns: 29.9rem max-content max-content;
+  grid-template-rows: max-content;
+  column-gap: 3.2rem;
+  row-gap: 5.9rem;
+  width: fit-content;
+  min-width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  place-content: center;
+  background-color: #292738;
+}
+.box {
+  padding: 2.9rem 4.8rem;
+  background: #363447;
+  box-shadow: 0.3rem 0.4rem 2.6rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+  color: white;
+  line-height: 160%;
+}
+.box:nth-child(4) {
+  grid-column: 1/4;
+}
+.top {
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.bottom .item {
+  display: flex;
+  gap: 1rem;
+}
+.bottom .item span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.bottom .item span {
+}
+.bottom .item span:nth-child(1)::before {
+  --bg-color: #4a4556;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background-color: var(--bg-color);
+  border-radius: 999px;
+}
+
+.nps {
+  gap: 3.2rem;
+  text-align: center;
+}
+.nps .middle {
+  height: 19.7;
+  place-content: center;
+  justify-items: center;
+  gap: 1.6rem;
+  color: #81fbb8;
+}
+.nps .bottom {
+  gap: 1rem;
+}
+
+/*----------------------------------------------------------*/
+/*  o 232 do html(largura do circulo 197 + 35(largura da borda) */
+.middle {
+  place-content: center;
+  display: grid;
+}
+svg {
+  --percentage:0;
+  width: 19.7rem;
+  height: 19.7rem;
+  transform: rotate(-90deg);
+}
+svg circle {
+  stroke-dasharray: 618; /*  2*3.14*197   */
+  stroke-dashoffset: 618;
+  stroke-width: 35; /* a largura da borda*/
+  fill: none;
+}
+
+svg circle:nth-child(1){
+stroke-dashoffset: 0;
+}
+
+svg circle:nth-child(2){
+stroke-dashoffset:calc(618 - (618 * var(--percentage)) /100)
+} 
+
+
+

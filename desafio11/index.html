@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login Rocketseat</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="./assets/images/logo.svg" alt="" />
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Acesse a plataforma</h1>
+            <p>
+              Faça login ou registre-se para começar a construir seus projectos
+              ainda hoje
+            </p>
+          </div>
+          <form>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Digite seu email"
+             
+              />
+            </div>
+            <div class="input-wrapper">
+              <div class="label-wrapper flex">
+                <label for="senha">Senha</label>
+                <a href="#">Esqueceu a senha</a>
+              </div>
+              <input
+                type="password"
+                id="senha"
+                name="password"
+                placeholder="digite sua senha"
+              />
+              <img
+                class="show-password eye"
+                onclick=" togglePassword()"
+                src="./assets/images/eyes.svg"
+                alt=""
+              />
+              <img
+                class="hide-password eye hide"
+                onclick=" togglePassword()"
+                src="./assets/images/closed-eye.svg"
+                alt=""
+              />
+            </div>
+
+            <button type="submit">Entrar</button>
+            <div class="create-account">
+              Ainda não tem uma conta
+              <a href="#">Inscreva-se</a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img src="./assets/images/img.jpg" alt="" class="flex-image" />
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
