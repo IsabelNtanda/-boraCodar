@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+#kanban {
+  background: #7c3aed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 3.2rem 0 0 3.2rem;
+}
+.bx-menu{
+color: white;
+font-size: 6rem;
+padding: 3.2rem 0 0 3.2rem;
+display: none;
+}
+.setting {
+  padding: 0 2.7rem 0 3.2rem;
+  margin-top: 5.9rem;
+}
+.setting ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.setting ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.setting li i {
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.setting ul li a {
+  color: #fff;
+  opacity: 0.4;
+  font-size: 1.4rem;
+}
+
+.setting ul li .btn-primary,
+.setting .ph-clipboard {
+  color: #fff;
+  opacity: 1;
+}
+#main {
+  padding: 4.8rem 3.2rem;
+  background: #fbfaff;
+  border-radius: 3.2rem 0rem 0rem 0rem;
+  width: 85%;
+  margin-top: 0.4rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+header h1 {
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: #403937;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+header h1 i {
+  color: #c7c7cd;
+}
+header img {
+  border-radius: 999.9rem;
+}
+
+.search-cards {
+  padding: 0 2.4rem;
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  height: 4.8rem;
+}
+.search-cards button {
+  font-weight: 400;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  background: #7c3aed;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+.search-cards button i {
+  font-size: 2.4rem;
+}
+.search-cards button:hover {
+  filter: brightness(1.2);
+}
+
+
+ input {
+  width: 100%;
+  padding: 2.4rem;
+  height: 100%;
+  border: none;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+  border-radius: 0.8rem;
+  position: relative;
+  
+}
+
+.search-cards input::placeholder {
+  font-weight: 400;
+  line-height: 100%;
+  color: #7c7c8a;
+}
+.search-cards input:focus,
+.search-cards input:hover
+ {
+  outline: 0.2rem solid #7c3aed;
+}
+.kanban-cards {
+  padding: 3.2rem 3.2rem 0 3.2rem;
+  
+  /*display:flex;
+  gap: 4.8rem;
+  */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 4.8rem;
+}
+.kanban-card h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  color: #403937;
+  margin-bottom: 2.4rem;
+}
+.kanban-card .card {
+  padding: 2.4rem;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 1.6rem #eae2fd;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+  transition: .4s;
+}
+.kanban-card .card:hover{
+transform: scale(.9);
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: #403937;
+}
+.card p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: #756966;
+  margin: 1rem 0 1.4rem 0;
+}
+span {
+  padding: 0.4rem 0.8rem;
+  background: #e2d6ff;
+  border-radius: 8px;
+  color: #7c3aed;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 130%;
+}
+
+@media (max-width:1270px){
+  .kanban-cards {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:946px){
+  .kanban-cards {
+    grid-template-columns:1fr;
+  }
+}
+/*
+@media (max-width:736px){
+ .content-left-side{
+ width: 5%;
+}
+
+}
+*/
+
+@media (max-width:602) {
+  #main{
+  width: 100%;
+  }
+}
+
+
+
+
+
