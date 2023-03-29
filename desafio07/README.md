@@ -1,5 +1,8 @@
 <h1 align="center"> Bloco de Carnaval de 2023</h1>
 
+
+- [Acesse o projeto finalizado, online](https://bora-codar-xi.vercel.app/desafio07/index.html)
+
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,7 +33,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Bloco de Carnaval é um desafio da comunidade rocketseat sugerida pelo professor Mayk Brito dentro da #BoraCodar
 
+<<<<<<< HEAD
  [Acesse o projeto finalizado, online](https://bora-codar-xi.vercel.app/desafio07/index.html)
+=======
+>>>>>>> 6d53fff142374fe4b56ea70ff3f6301eba871e26
 
 
 ## 🔖 Layout
