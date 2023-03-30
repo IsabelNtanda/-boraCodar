@@ -234,9 +234,20 @@ span {
 }
 */
 
-@media (max-width:602) {
+@media (max-width:602px) {
   #main{
   width: 100%;
+  }
+  #kanban{
+  flex-direction: column;
+  }
+  .content-left-side{
+  margin: auto;
+  padding-bottom: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
   }
 }
 
