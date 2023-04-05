@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #111827;
+}
+#app {
+  /*
+ max-width: 73.6rem;
+ width:100%;
+height: 42rem;
+*/
+  background-color: #1f2937;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+}
+
+.cc {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  max-width: 100%;  
+  width: 67.2rem;
+  height: 25.2rem;
+
+
+}
+form {
+  display: flex;
+  width: 32.8rem;
+  height: 252px;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+form label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #e5e7eb;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  border: 1.5px solid #374151;
+  border-radius: 0.4rem;
+  background: #111827;
+  transition: all 0.5s;
+  outline: none;
+  color: #f3f4f6;
+}
+input:hover {
+  border: 1.5px solid #4b5563;
+}
+input:focus {
+  border: 1.5px solid #9333ea;
+  color: white;
+}
+input::placeholder {
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #f3f4f6;
+}
+.flex {
+  display: flex;
+  gap: 1.6rem;
+}
+button {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 4.8rem;
+  border: none;
+  width: 100%;
+  background: #9333ea;
+  box-shadow: 0px 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  color: #f9fafb;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background: #a855f7;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+button:focus {
+  border: 2px solid #f9fafb;
+  border-radius: 8px;
+}
+button:disabled {
+  background: #9333ea;
+  opacity: 0.5;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.card-info {
+  width: 280px;
+  height: 220px;
+  margin-block: 1.6rem;
+}
+.credit-card {
+  background: url("..//images/card.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+  border: 1px solid #374151;
+  box-shadow: 0px 0.4rem 2.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+}
+.top-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cc-number {
+  margin-top: 4rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: 0.18em;
+  color: #f9fafb;
+}
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-top: 2.4rem;
+  color: #f9fafb;
+  opacity: 0.5;
+}
+.safe-info {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.safe-info p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #e5e7eb;
+}
+@media (max-width: 768px) {
+  body{
+    background-color: #1f2937;
+  }
+  .cc {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+  }
+
+}

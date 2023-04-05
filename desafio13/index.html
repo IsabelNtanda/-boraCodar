@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="cc">
+        <form action="">
+          <div class="text-field">
+            <label for="">Número do cartão</label>
+            <input type="text" placeholder="236598544" id="card_number_input"  maxlength="16" />
+          </div>
+
+          <div class="text-field">
+            <label for="">Número do titular</label>
+            <input
+              type="text"
+              placeholder="Nome do titular como está no cartão" id="card_name"
+            maxlength="20" />
+          </div>
+          <div class="flex">
+            <div class="text-field">
+              <label for="validate">validade</label>
+              <input id="validate" type="text" placeholder="mm/aa" />
+            </div>
+
+            <div class="texr-field">
+              <label class="ccv" for="">CVV</label>
+              <input type="text" placeholder="***" />
+            </div>
+          </div>
+        </form>
+        <div class="card-info">
+          <div class="credit-card">
+            <div class="top-info">
+              <img src="./assets/images/band.svg" alt="" />
+              <img src="./assets/images/contact.svg" alt="" />
+            </div>
+            <div class="cc-number">1234 5678 9012 3456</div>
+            <div class="bottom-info">
+              <div class="label">seu nome aqui</div>
+              <div class="validate">**/**</div>
+            </div>
+          </div>
+          <div class="safe-info">
+            <img src="./assets/images/shieldcheck.svg" alt="">
+            <p>Seus dados estão seguros</p>
+          </div>
+        </div>
+      </div>
+      <button disabled>Adicionar cartão</button>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
