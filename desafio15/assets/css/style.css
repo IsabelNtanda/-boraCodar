@@ -225,6 +225,7 @@ border: 1px solid #E2E8F0;
 @media (max-width:1280px){
 .cards{
 padding: 8rem 2rem;
+
 }
 
 .card{
@@ -238,7 +239,7 @@ padding: 8rem 2rem;
     padding: 8rem .5rem;
   }
   .card{
-    margin: 0 auto;
+    margin: 1.5rem auto;
     width: 360px;
   }
 }
