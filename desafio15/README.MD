@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img alt="cartao de credito" src=".github/preview-desktop.jpeg" width="100%">
+  <img alt="pricing table" src=".github/preview.png" width="100%">
 </p>
 
 <br>
