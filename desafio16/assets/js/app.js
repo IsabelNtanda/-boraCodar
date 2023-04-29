@@ -1,5 +1,5 @@
 // Variaveis globais
-let indexUrl = "../";
+let indexUrl = "../desafio16/index.html";
 let contactList = []
 
 // F: serve para pegar os dados iniciais presentes no armazenamento local
