@@ -4,27 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>The Abstract Gallery</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <main id="main">
-      <h1>The — <br> Abstract <br> Gallery</h1>
+      <h1>
+        The — <br />
+        Abstract <br />
+        Gallery
+      </h1>
       <div class="gallery">
-        <div class="column-img">
-          <img src="./assets/images/img1.png" alt="" />
-          <img src="./assets/images/img2.png" alt="" />
-          <img src="./assets/images/img3.png" alt="" />
+        <div class="column-img1">
+          <div class="image-container">
+            <img src="./assets/images/img1.png" alt="" />
+            <div class="image-container-text">
+              <h2>Blue picture</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/img2.png" alt="" />
+            <div class="image-container-text">
+              <h2>Abstract Name</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/img3.png" alt="" />
+            <div class="image-container-text">
+              <h2>Abstract Name</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
         </div>
-        <img src="./assets/images/img4.png" alt="" class="" />
+        <div class="image-container">
+          <img src="./assets/images/img4.png" alt="" class="" />
+          <div class="image-container-text">
+            <h2>Abstract Name</h2>
+            <span>clique para visualização única da foto</span>
+          </div>
+        </div>
+        <div class="column-img2">
+          <div class="image-container">
+            <img src="./assets/images/img5.png" alt="" />
+            <div class="image-container-text">
+              <h2>Abstract Name</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/img6.png" alt="" />
+            <div class="image-container-text">
+              <h2>Abstract Name</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/img7.png" alt="" />
+            <div class="image-container-text">
+              <h2>Abstract Name</h2>
+              <span>clique para visualização única da foto</span>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./assets/images/img8.png" alt="" />
+          <div class="image-container-text">
+            <h2>Abstract Name</h2>
+            <span>clique para visualização única da foto</span>
+          </div>
+        </div>
 
-        <div class="column-img">
-          <img src="./assets/images/img5.png" alt="" />
-          <img src="./assets/images/img6.png" alt="" />
-          <img src="./assets/images/img7.png" alt="" />
+        <div class="popup-img">
+          <h2>Blue picture</h2>
+          <span>&times;</span>
+          <img src="./assets/images/img1.png" alt="">
         </div>
-        <img src="./assets/images/img8.png" alt="" />
       </div>
     </main>
+    <script>
+  document.querySelectorAll('.image-container img').forEach(image =>{
+  image.onclick = () => {
+  document.querySelector('.popup-img').style.display='block'
+  document.querySelector('.popup-img img').src = image.getAttribute('src')
+  }
+  }) 
+
+  document.querySelector('.popup-img span').onclick = () =>{
+    document.querySelector('.popup-img').style.display='none'
+  }
+    </script>
   </body>
 </html>
